@@ -4,12 +4,12 @@ const project = resolve(__dirname, "tsconfig.json");
 
 module.exports = {
   extends: [
-    "plugin:typescript-sort-keys/recommended",
     require.resolve("@vercel/style-guide/eslint/browser"),
     require.resolve("@vercel/style-guide/eslint/react"),
     require.resolve("@vercel/style-guide/eslint/next"),
     require.resolve("@vercel/style-guide/eslint/typescript"),
     "next/core-web-vitals",
+    "plugin:typescript-sort-keys/recommended",
     "prettier",
   ],
   parserOptions: {
@@ -52,6 +52,29 @@ module.exports = {
       {
         namedComponents: "arrow-function",
         unnamedComponents: "arrow-function",
+      },
+    ],
+    "react/jsx-sort-props": [
+      "error",
+      {
+        callbacksLast: true,
+        ignoreCase: true,
+        reservedFirst: true,
+      },
+    ],
+    "sort-destructure-keys/sort-destructure-keys": [
+      2,
+      {
+        caseSensitive: false,
+      },
+    ],
+    "sort-keys": [
+      "error",
+      "asc",
+      {
+        caseSensitive: false,
+        minKeys: 2,
+        natural: true,
       },
     ],
     "unicorn/filename-case": "off",
