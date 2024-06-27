@@ -5,19 +5,28 @@ const project = resolve(__dirname, "tsconfig.json");
 module.exports = {
   extends: [
     require.resolve("@vercel/style-guide/eslint/browser"),
+    require.resolve("@vercel/style-guide/eslint/node"),
     require.resolve("@vercel/style-guide/eslint/react"),
     require.resolve("@vercel/style-guide/eslint/next"),
     require.resolve("@vercel/style-guide/eslint/typescript"),
-    "next/core-web-vitals",
     "plugin:typescript-sort-keys/recommended",
+    "plugin:vitest/legacy-recommended",
     "prettier",
   ],
   parserOptions: {
     project,
   },
-  plugins: ["typescript-sort-keys", "sort-destructure-keys"],
+  plugins: [
+    "jsx-a11y",
+    "vitest",
+    "typescript-sort-keys",
+    "sort-destructure-keys",
+  ],
   rules: {
-    "@typescript-eslint/explicit-function-return-type": 0,
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/restrict-template-expressions": "off",
+    "@typescript-eslint/unbound-method": "off",
     "import/no-default-export": "off",
     "import/no-extraneous-dependencies": [
       "error",
@@ -27,7 +36,10 @@ module.exports = {
           "**/*.config.ts",
           "**/*.spec.tsx",
           "**/setupTests.ts",
+          "**/test-utils/*.*",
+          "/src/mocks/*.*",
         ],
+        packageDir: "./",
       },
     ],
     "import/order": [
@@ -38,6 +50,13 @@ module.exports = {
           ["parent", "sibling", "index"],
         ],
         "newlines-between": "always",
+      },
+    ],
+    "no-console": "warn",
+    "no-implicit-coercion": [
+      "error",
+      {
+        allow: ["!!"],
       },
     ],
     "no-param-reassign": [
@@ -62,6 +81,7 @@ module.exports = {
         reservedFirst: true,
       },
     ],
+    "react/no-unescaped-entities": "off",
     "sort-destructure-keys/sort-destructure-keys": [
       2,
       {
