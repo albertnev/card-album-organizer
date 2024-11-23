@@ -62,7 +62,7 @@ module.exports = {
     "no-param-reassign": [
       "error",
       {
-        ignorePropertyModificationsFor: ["immerDraft", "accu"],
+        ignorePropertyModificationsFor: ["immerDraft", "accu", "state"],
         props: true,
       },
     ],

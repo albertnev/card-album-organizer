@@ -7,15 +7,14 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/sections/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  plugins: [require("tailwindcss-animate"), require("daisyui")],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      aspectRatio: {
+        card: "63 / 88",
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
 };
+
 export default config;
