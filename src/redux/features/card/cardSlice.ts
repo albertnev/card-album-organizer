@@ -1,7 +1,7 @@
 import type { PayloadAction } from "@reduxjs/toolkit";
 import { createSlice } from "@reduxjs/toolkit";
 
-import { type CardAlbumParamsDto } from "@/app/types/CardAlbumParamsDto";
+import { type CardAlbumParamsDto } from "@/types/CardAlbumParamsDto";
 
 export interface CardState {
   current: CardAlbumParamsDto;

@@ -1,9 +1,9 @@
 import { AlbumPageGrid } from "../AlbumPageGrid";
 
-import { pageSides } from "@/app/constants/pageSides";
-import { getAlbumSettings } from "@/app/redux/features/album/selectors";
-import { useAppSelector } from "@/app/redux/hooks";
-import { type CardAlbumParamsDto } from "@/app/types/CardAlbumParamsDto";
+import { pageSides } from "@/constants/pageSides";
+import { getAlbumSettings } from "@/redux/features/album/selectors";
+import { useAppSelector } from "@/redux/hooks";
+import { type CardAlbumParamsDto } from "@/types/CardAlbumParamsDto";
 
 interface AlbumPreviewProps {
   cardAlbumParameters: CardAlbumParamsDto;

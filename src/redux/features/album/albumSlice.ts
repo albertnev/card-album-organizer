@@ -1,7 +1,7 @@
 import type { PayloadAction } from "@reduxjs/toolkit";
 import { createSlice } from "@reduxjs/toolkit";
 
-import { type AlbumSettingsDto } from "@/app/types/AlbumSettingsDto";
+import { type AlbumSettingsDto } from "@/types/AlbumSettingsDto";
 
 export interface AlbumState {
   settings: AlbumSettingsDto;

@@ -4,17 +4,17 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 import { AlbumPreview } from "../AlbumPreview";
 
-import { pageSides } from "@/app/constants/pageSides";
+import { pageSides } from "@/constants/pageSides";
 import {
   getCardParameters,
   getPreviousCardParameters,
-} from "@/app/redux/features/card/selectors";
+} from "@/redux/features/card/selectors";
 import {
   getSearchIsLoading,
   getSearchIsRelative,
-} from "@/app/redux/features/search/selectors";
-import { useAppSelector } from "@/app/redux/hooks";
-import { getRelativeCardPosition } from "@/app/utils/getRelativeCardPosition";
+} from "@/redux/features/search/selectors";
+import { useAppSelector } from "@/redux/hooks";
+import { getRelativeCardPosition } from "@/utils/getRelativeCardPosition";
 
 const CardSearchResults = () => {
   const searchIsLoading = useAppSelector(getSearchIsLoading);

@@ -2,9 +2,9 @@ import { clsx } from "clsx";
 
 import { AlbumCard } from "../AlbumCard";
 
-import { pageSides } from "@/app/constants/pageSides";
-import { type AlbumSettingsDto } from "@/app/types/AlbumSettingsDto";
-import { type CardAlbumParamsDto } from "@/app/types/CardAlbumParamsDto";
+import { pageSides } from "@/constants/pageSides";
+import { type AlbumSettingsDto } from "@/types/AlbumSettingsDto";
+import { type CardAlbumParamsDto } from "@/types/CardAlbumParamsDto";
 
 interface AlbumPageGrid {
   cardPosition: CardAlbumParamsDto["position"];

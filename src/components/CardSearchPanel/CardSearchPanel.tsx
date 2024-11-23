@@ -4,15 +4,15 @@ import { useDebounce } from "use-debounce";
 import { Input } from "../Input";
 import { Toggle } from "../Toggle";
 
-import { getAlbumSettings } from "@/app/redux/features/album/selectors";
-import { setCardResults } from "@/app/redux/features/card/cardSlice";
+import { getAlbumSettings } from "@/redux/features/album/selectors";
+import { setCardResults } from "@/redux/features/card/cardSlice";
 import {
   setSearchIsLoading,
   setSearchIsRelative,
-} from "@/app/redux/features/search/searchSlice";
-import { getSearchSettings } from "@/app/redux/features/search/selectors";
-import { useAppDispatch, useAppSelector } from "@/app/redux/hooks";
-import { getCardPosition } from "@/app/utils/getCardPosition";
+} from "@/redux/features/search/searchSlice";
+import { getSearchSettings } from "@/redux/features/search/selectors";
+import { useAppDispatch, useAppSelector } from "@/redux/hooks";
+import { getCardPosition } from "@/utils/getCardPosition";
 
 const CardSearchPanel = () => {
   const dispatch = useAppDispatch();

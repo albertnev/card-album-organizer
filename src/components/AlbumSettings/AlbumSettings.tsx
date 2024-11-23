@@ -4,12 +4,9 @@ import range from "lodash.range";
 
 import { DiceButton } from "../DiceButton";
 
-import {
-  setAlbumCols,
-  setAlbumRows,
-} from "@/app/redux/features/album/albumSlice";
-import { getAlbumSettings } from "@/app/redux/features/album/selectors";
-import { useAppDispatch, useAppSelector } from "@/app/redux/hooks";
+import { setAlbumCols, setAlbumRows } from "@/redux/features/album/albumSlice";
+import { getAlbumSettings } from "@/redux/features/album/selectors";
+import { useAppDispatch, useAppSelector } from "@/redux/hooks";
 
 const AlbumSettings = () => {
   const settings = useAppSelector(getAlbumSettings);
