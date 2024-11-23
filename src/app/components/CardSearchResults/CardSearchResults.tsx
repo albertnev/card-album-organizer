@@ -29,7 +29,7 @@ const CardSearchResults = () => {
   return (
     <div className="relative w-full py-4 min-h-56 flex flex-col items-center lg:flex-row lg:justify-center">
       {searchIsLoading ? (
-        <div className="absolute z-30 w-full h-full bg-base-100/80 flex justify-center items-center">
+        <div className="absolute z-30 w-full h-full bg-base-200/80 flex justify-center items-center">
           <span className="loading loading-spinner loading-lg" />
         </div>
       ) : null}

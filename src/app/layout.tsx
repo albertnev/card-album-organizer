@@ -19,7 +19,7 @@ const RootLayout = ({
   return (
     <html lang="en">
       <body
-        className={`${roboto.className} px-8 py-4 h-screen w-full bg-base-100 antialiased leading-relaxed text-base-content`}
+        className={`${roboto.className} px-8 py-4 min-h-screen w-full bg-base-200 antialiased leading-relaxed text-base-content`}
       >
         <HeaderMenu />
         <div className="lg:p-8 md:p-6 p-4">{children}</div>

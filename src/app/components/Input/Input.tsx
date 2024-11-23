@@ -15,7 +15,8 @@ const Input = ({
   return (
     <input
       className={clsx(className, {
-        "focus:outline-none border-b-2 p-0 w-16": variant === "phantom",
+        "focus:outline-none bg-transparent border-b-2 p-0 w-16":
+          variant === "phantom",
         "input input-bordered w-full max-w-xs": variant === "normal",
       })}
       {...rest}

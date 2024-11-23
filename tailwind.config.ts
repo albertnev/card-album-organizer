@@ -7,6 +7,7 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/sections/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  daisyui: {},
   plugins: [require("tailwindcss-animate"), require("daisyui")],
   theme: {
     extend: {
