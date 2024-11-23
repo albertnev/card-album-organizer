@@ -8,11 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "test": "vitest run",
-    "test-coverage": "vitest run --coverage",
-    "e2e": "npx playwright test",
-    "e2e-show": "npx playwright show-report",
-    "e2e-record-mobile": "npx playwright codegen --device=\"Pixel 5\" http://localhost:3000",
-    "e2e-record-desktop": "npx playwright codegen --device=\"Desktop Chrome\" http://localhost:3000"
+    "test-coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.3.0",
@@ -29,7 +25,6 @@
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^14.2.3",
-    "@playwright/test": "^1.44.1",
     "@testing-library/jest-dom": "^6.4.5",
     "@testing-library/react": "^16.0.0",
     "@testing-library/user-event": "^14.5.2",

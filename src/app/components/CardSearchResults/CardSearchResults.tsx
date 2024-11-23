@@ -36,25 +36,25 @@ const CardSearchResults = () => {
       {displayCardAlbumParams.page ? (
         <>
           <div className="stats stats-horizontal shadow w-fit flex mx-auto my-2 lg:stats-vertical lg:inline-grid lg:mx-0 lg:mr-4">
-            <div className="stat">
+            <div className="stat p-2 md:p-4">
               <div className="stat-title">Page turns</div>
               <div className="stat-value flex justify-center">
                 {displayCardAlbumParams.pageTurns}
               </div>
             </div>
-            <div className="stat">
+            <div className="stat p-2 md:p-4">
               <div className="stat-title">Page</div>
               <div className="stat-value flex justify-center">
                 {displayCardAlbumParams.page}
               </div>
             </div>
-            <div className="stat">
+            <div className="stat p-2 md:p-4">
               <div className="stat-title">Page slot</div>
               <div className="stat-value flex justify-center">
                 {displayCardAlbumParams.position}
               </div>
             </div>
-            <div className="stat">
+            <div className="stat p-2 md:p-4">
               <div className="stat-title">Page side</div>
               <div className="stat-value flex justify-center capitalize">
                 {displayCardAlbumParams.side === pageSides.left ? (

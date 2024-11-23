@@ -20,7 +20,7 @@ const AlbumSettings = () => {
 
   return (
     <div>
-      <div className="stats stats-horizontal shadow">
+      <div className="stats stats-vertical md:stats-horizontal shadow">
         <div className="stat">
           <div className="stat-title">Page columns</div>
           <div className="stat-value flex gap-1">
