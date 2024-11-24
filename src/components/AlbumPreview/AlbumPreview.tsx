@@ -25,7 +25,7 @@ const AlbumPreview = ({ cardAlbumParameters }: AlbumPreviewProps) => {
     : cardPageStart + cardsPerPage;
 
   return (
-    <div className="flex gap-4 p-2 bg-neutral w-fit rounded-md flex-shrink-0">
+    <div className="flex gap-4 p-2 bg-neutral w-fit rounded-lg flex-shrink-0">
       <AlbumPageGrid
         cardPosition={isLeftPage ? cardAlbumParameters.position : 0}
         cols={albumSettings.cols}

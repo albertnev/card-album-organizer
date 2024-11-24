@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { LuInfo } from "react-icons/lu";
 import { useDebounce } from "use-debounce";
 
 import { Input } from "../Input";
@@ -37,15 +38,22 @@ const CardSearchPanel = () => {
   }, [debouncedSearchCardNumber, cols, rows, dispatch]);
 
   return (
-    <div className="my-4 stats stats-horizontal shadow">
+    <div className="my-4 stats stats-horizontal shadow overflow-visible">
       <div className="stat">
         <div className="stat-title">Card number</div>
         <div className="stat-value flex gap-1">
           # <Input type="number" variant="phantom" onChange={handleOnChange} />
         </div>
       </div>
-      <div className="stat">
-        <div className="stat-title">Relative</div>
+      <div className="stat overflow-visible">
+        <div
+          className="tooltip tooltip-top md:tooltip-right"
+          data-tip="Get page turns relative to where you are (your last search)."
+        >
+          <div className="stat-title">
+            Relative <LuInfo className="inline-block" />
+          </div>
+        </div>
         <div className="stat-value flex gap-1">
           <Toggle
             defaultChecked={relativeSearch}

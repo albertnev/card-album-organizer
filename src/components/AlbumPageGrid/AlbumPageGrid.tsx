@@ -36,14 +36,14 @@ const AlbumPageGrid = ({
       {page > 0 && (
         <div
           className={clsx(
-            "absolute text-sm rounded-full  w-5 h-5 bg-neutral-content text-neutral flex justify-center items-center font-bold",
+            "absolute text-sm bg-neutral-content text-neutral flex px-2 py-1 rounded-md justify-center items-center font-bold opacity-80",
             {
               "left-0": isLeftPage,
               "right-0": !isLeftPage,
             },
           )}
         >
-          <span>{page}</span>
+          <span>Page {page}</span>
         </div>
       )}
       {Array.from({ length: cols * rows }).map((_item, position) => (
